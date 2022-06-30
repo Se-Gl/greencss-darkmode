@@ -12,23 +12,23 @@ This is a darkmode add-on for the [greenCSS library](https://www.npmjs.com/packa
 ## Getting started
 
 ```
-npm i @greencss/darkmode
+npm i @greencss/dark-mode
 ```
 
 ## Initialisation
 
-- Import all greenCSS and darkmode classes into your project.
+- Import all greenCSS and dark-mode classes into your project.
 
 ```
 import 'greencss/css/greencss.css'.
-import '@greencss/darkmode/css/greencss.css'
+import '@greencss/dark-mode/css/greencss.css'
 ```
 
 - If you only want to use the dark mode colors, for example, import only the category into your project that you need.
 
 ```
 ...
-import '@greencss/darkmode/css/classes/color/color.css'
+import '@greencss/dark-mode/css/classes/color/color.css'
 ```
 
 Currently, the following categories are available:
@@ -55,13 +55,13 @@ You will find more information about the [CSS categories](https://www.greencss.d
 Instead of the normal version, you can also import a lightweight minified version.
 
 ```
-import '@greencss/darkmode/css/minified/greencss.css'
+import '@greencss/dark-mode/css/minified/greencss.css'
 ```
 
 Compact imports also work with categories:
 
 ```
-import '@greencss/darkmode/css/minified/classes/color/color.css'
+import '@greencss/dark-mode/css/minified/classes/color/color.css'
 ```
 
 ## Before you code
@@ -73,7 +73,7 @@ import '@greencss/darkmode/css/minified/classes/color/color.css'
 
 ```
 import 'greencss/css/greencss.css'.
-import '@greencss/darkmode/css/greencss.css'
+import '@greencss/dark-mode/css/greencss.css'
 import 'path-to-your-reset.css-file'.
 ```
 
