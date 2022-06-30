@@ -3,9 +3,9 @@
 This is a darkmode add-on for the [greenCSS library](https://www.npmjs.com/package/greencss).
 
 [![Prettier Code Style](https://github.com/Se-Gl/greencss-darkmode/actions/workflows/prettier.yml/badge.svg)](https://github.com/Se-Gl/greencss-darkmode/actions/workflows/prettier.yml)
-[![Downloads p/week](https://badgen.net/npm/dw/@greencss/darkmode)](https://badgen.net/npm/dw/@greencss/darkmode)
-[![NPM version](https://badgen.net/npm/v/@greencss/darkmode)](https://badgen.net/npm/v/@greencss/darkmode)
-[![License](https://badgen.net/npm/license/@greencss/darkmode)](https://badgen.net/npm/license/@greencss/darkmode)
+[![Downloads p/week](https://badgen.net/npm/dw/@greencss/dark-mode)](https://badgen.net/npm/dw/@greencss/dark-mode)
+[![NPM version](https://badgen.net/npm/v/@greencss/dark-mode)](https://badgen.net/npm/v/@greencss/dark-mode)
+[![License](https://badgen.net/npm/license/@greencss/dark-mode)](https://badgen.net/npm/license/@greencss/dark-mode)
 
 ![greencss logo](./information/greencss-logo_dark.svg)
 
