@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/Se-Gl/greencss-darkmode/compare/v1.0.2...v1.0.3) (2022-06-30)
+
+
+### Bug Fixes
+
+* **information:** added docs for basic libraries ([b9107ca](https://github.com/Se-Gl/greencss-darkmode/commit/b9107ca421772d08b777114682e6074e47876b42))
+* **information:** added docs for basic libraries ([060d52b](https://github.com/Se-Gl/greencss-darkmode/commit/060d52bde6e4d69d7ab819ec29ccd89ca46b0a83))
+
 ## [1.0.2](https://github.com/Se-Gl/greencss-darkmode/compare/v1.0.1...v1.0.2) (2022-06-30)
 
 ### Bug Fixes
