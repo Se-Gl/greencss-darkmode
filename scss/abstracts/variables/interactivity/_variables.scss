@@ -1,0 +1,135 @@
+$interactivityUtilitiesWebkit: (
+  'appearance': (
+    'values': (
+      appearance-none: none,
+      appearance-auto: auto
+    )
+  ),
+  'user-select': (
+    'values': (
+      select-none: none,
+      select-text: text,
+      select-all: all,
+      select-auto: auto,
+      select-contain: contain
+    )
+  )
+);
+
+$interactivityUtilities: (
+  'cursor': (
+    'values': (
+      cursor-auto: auto,
+      cursor-default: default,
+      cursor-pointer: pointer,
+      cursor-wait: wait,
+      cursor-text: text,
+      cursor-move: move,
+      cursor-help: help,
+      cursor-not-allowed: not-allowed,
+      cursor-none: none,
+      cursor-context-menu: context-menu,
+      cursor-progress: progress,
+      cursor-cell: cell,
+      cursor-crosshair: crosshair,
+      cursor-vertical-text: vertical-text,
+      cursor-alias: alias,
+      cursor-copy: copy,
+      cursor-no-drop: no-drop,
+      cursor-grab: grab,
+      cursor-grabbing: grabbing,
+      cursor-all-scroll: all-scroll,
+      cursor-col-resize: col-resize,
+      cursor-row-resize: row-resize,
+      cursor-n-resize: n-resize,
+      cursor-e-resize: e-resize,
+      cursor-s-resize: s-resize,
+      cursor-w-resize: w-resize,
+      cursor-ne-resize: ne-resize,
+      cursor-nw-resize: nw-resize,
+      cursor-se-resize: se-resize,
+      cursor-sw-resize: sw-resize,
+      cursor-ew-resize: ew-resize,
+      cursor-ns-resize: ns-resize,
+      cursor-nesw-resize: nesw-resize,
+      cursor-nwse-resize: nwse-resize,
+      cursor-zoom-in: zoom-in,
+      cursor-zoom-out: zoom-out
+    )
+  ),
+  'pointer-events': (
+    'values': (
+      pointer-events-none: none,
+      pointer-events-auto: auto,
+      pointer-events-visiblePainted: visiblePainted,
+      pointer-events-visibleFill: visibleFill,
+      pointer-events-visibleStroke: visibleStroke,
+      pointer-events-visible: visible,
+      pointer-events-painted: painted,
+      pointer-events-fill: fill,
+      pointer-events-stroke: stroke,
+      pointer-events-all: all
+    )
+  ),
+  'resize': (
+    'values': (
+      resize-none: none,
+      resize-vertical: vertical,
+      resize-horizontal: horizontal,
+      resize-both: both
+    )
+  ),
+  'scroll-behavior': (
+    'values': (
+      scroll-auto: auto,
+      scroll-smooth: smooth
+    )
+  ),
+  'scroll-snap-align': (
+    'values': (
+      snap-start: start,
+      snap-end: end,
+      snap-center: center,
+      snap-align-none: none
+    )
+  ),
+  'scroll-snap-stop': (
+    'values': (
+      snap-normal: normal,
+      snap-always: always
+    )
+  ),
+  'scroll-snap-type': (
+    'values': (
+      scroll-snap-none: none,
+      scroll-snap-x: x,
+      scroll-snap-y: y,
+      scroll-snap-block: block,
+      scroll-snap-inline: inline,
+      scroll-snap-both: both
+    )
+  ),
+  'touch-action': (
+    'values': (
+      touch-auto: auto,
+      touch-none: none,
+      touch-pan-x: pan-x,
+      touch-pan-left: pan-left,
+      touch-pan-right: pan-right,
+      touch-pan-y: pan-y,
+      touch-pan-up: pan-up,
+      touch-pan-down: pan-down,
+      touch-pinch-zoom: pinch-zoom,
+      touch-manipulation: manipulation
+    )
+  ),
+  'will-change': (
+    'values': (
+      will-change-auto: auto,
+      will-change-scroll: scroll-position,
+      will-change-contents: contents,
+      will-change-transform: transform,
+      will-change-opacity: opacity
+    )
+  )
+);

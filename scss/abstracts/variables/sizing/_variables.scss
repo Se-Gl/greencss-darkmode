@@ -1,0 +1,126 @@
+// includes spacing and sizing variables
+
+$sizingValues: (
+  'width': (
+    'values': (
+      w-auto: auto,
+      w-min-content: min-content,
+      w-max-content: max-content,
+      w-fit-content: fit-content
+    )
+  ),
+  'min-width': (
+    'values': (
+      min-w-auto: auto,
+      min-w-0px: 0px,
+      min-w-full: 100%,
+      min-w-min-content: min-content,
+      min-w-max-content: max-content,
+      min-w-fit-content: fit-content
+    )
+  ),
+  'max-width': (
+    'values': (
+      max-w-auto: auto,
+      max-w-min-content: min-content,
+      max-w-max-content: max-content,
+      max-w-fit-content: fit-content
+    )
+  ),
+  'height': (
+    'values': (
+      h-auto: auto,
+      h-min-content: min-content,
+      h-max-content: max-content,
+      h-fit-content: fit-content
+    )
+  ),
+  'min-height': (
+    'values': (
+      min-h-auto: auto,
+      min-h-0px: 0px,
+      min-h-full: 100%,
+      min-h-min-content: min-content,
+      min-h-max-content: max-content,
+      min-h-fit-content: fit-content
+    )
+  ),
+  'max-height': (
+    'values': (
+      max-h-auto: auto,
+      max-h-min-content: min-content,
+      max-h-max-content: max-content,
+      max-h-fit-content: fit-content
+    )
+  ),
+  'margin': (
+    'values': (
+      m-auto: auto
+    )
+  ),
+  'margin-inline': (
+    'values': (
+      mx-auto: auto
+    )
+  ),
+  'margin-block': (
+    'values': (
+      my-auto: auto
+    )
+  ),
+  'margin-top': (
+    'values': (
+      mt-auto: auto
+    )
+  ),
+  'margin-bottom': (
+    'values': (
+      mb-auto: auto
+    )
+  ),
+  'margin-left': (
+    'values': (
+      ml-auto: auto
+    )
+  ),
+  'margin-right': (
+    'values': (
+      mr-auto: auto
+    )
+  ),
+  'padding': (
+    'values': (
+      p-auto: auto
+    )
+  ),
+  'padding-inline': (
+    'values': (
+      px-auto: auto
+    )
+  ),
+  'padding-block': (
+    'values': (
+      py-auto: auto
+    )
+  ),
+  'padding-top': (
+    'values': (
+      pt-auto: auto
+    )
+  ),
+  'padding-bottom': (
+    'values': (
+      pb-auto: auto
+    )
+  ),
+  'padding-left': (
+    'values': (
+      pl-auto: auto
+    )
+  ),
+  'padding-right': (
+    'values': (
+      pr-auto: auto
+    )
+  )
+);

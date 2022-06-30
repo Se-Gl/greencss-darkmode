@@ -1,0 +1,20 @@
+@use 'sass:math';
+@use '../../variables/borders/variables' as *;
+@use '../../variables/color/variables' as *;
+
+@mixin dropShadowMixin($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
+  @each $key, $val in $loop {
+    $shadowSize: 10px 10px 20px;
+
+    @for $i from $firstnumber through $secondnumber {
+      .dark\:#{$bp}#{$key} {
+        filter: drop-shadow($shadowSize $val);
+      }
+      .dark\:#{$selector}\:#{$bp}#{$key} {
+        &:#{$selector} {
+          filter: drop-shadow($shadowSize $val);
+        }
+      }
+    }
+  }
+}

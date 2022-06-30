@@ -1,0 +1,32 @@
+@use 'sass:math';
+@use '../../variables/typography/variables' as *;
+
+// generate typo utility classes
+@mixin typobasis($bp: '') {
+  @each $property, $map in $typo-utilities {
+    $prefix: map-get($map, 'prefix');
+    $values: map-get($map, 'values');
+
+    @if ($property == 'text-orientation') {
+      @each $k, $v in $values {
+        .dark\:#{$bp}#{$prefix}#{$k} {
+          writing-mode: vertical-rl;
+          #{$property}: $v;
+        }
+      }
+    } @else if ($property == 'vertical-align') {
+      @each $k, $v in $values {
+        .dark\:#{$bp}#{$prefix}#{$k} {
+          display: inline;
+          #{$property}: $v;
+        }
+      }
+    } @else {
+      @each $k, $v in $values {
+        .dark\:#{$bp}#{$prefix}#{$k} {
+          #{$property}: $v;
+        }
+      }
+    }
+  }
+}

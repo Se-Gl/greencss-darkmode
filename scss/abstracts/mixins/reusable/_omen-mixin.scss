@@ -1,0 +1,207 @@
+@mixin universalMixin(
+  $isHover: false,
+  $isActive: false,
+  $isFocus: false,
+  $bp: '',
+  $classname: font-size,
+  $postfix: -rem,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $calculate: 1,
+  $multiply: 1,
+  $isAnimation: false
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $spacing: $i * $calculate;
+
+    @if ($spacing < 0) {
+      .dark\:#{$bp}neg#{$spacing}#{$postfix} {
+        #{$classname}: $spacing * $multiply;
+      }
+      @if ($isHover == true) {
+        .dark\:hover\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .dark\:active\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .dark\:focus\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+    } @else {
+      .dark\:#{$bp}#{$spacing}#{$postfix} {
+        #{$classname}: $spacing * $multiply;
+        @if ($isAnimation == true) {
+          -webkit-#{$classname}: $spacing * $multiply;
+        }
+      }
+      @if ($isHover == true) {
+        .dark\:hover\:#{$bp}#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: $spacing * $multiply;
+            @if ($isAnimation == true) {
+              -webkit-#{$classname}: $spacing * $multiply;
+            }
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .dark\:active\:#{$bp}#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: $spacing * $multiply;
+            @if ($isAnimation == true) {
+              -webkit-#{$classname}: $spacing * $multiply;
+            }
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .dark\:focus\:#{$bp}#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: $spacing * $multiply;
+            @if ($isAnimation == true) {
+              -webkit-#{$classname}: $spacing * $multiply;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin transformMixin(
+  $isHover: false,
+  $isActive: false,
+  $isFocus: false,
+  $bp: '',
+  $classname: '',
+  $postfix: '',
+  $firstnumber,
+  $secondnumber,
+  $calculate: 1,
+  $multiply: 1,
+  $filter: ''
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $spacing: $i * $calculate;
+    $calculattion: ($spacing * $multiply);
+
+    @if ($spacing < 0) {
+      .dark\:#{$bp}neg#{$spacing}#{$postfix} {
+        #{$classname}: #{$filter }($calculattion * 1);
+        -webkit-#{$classname}: #{$filter }($calculattion * 1);
+      }
+      @if ($isHover == true) {
+        .dark\:hover\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .dark\:active\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .dark\:focus\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+    } @else {
+      .dark\:#{$bp}#{$spacing}#{$postfix} {
+        #{$classname}: #{$filter }($calculattion * 1);
+        -webkit-#{$classname}: #{$filter }($calculattion * 1);
+      }
+      @if ($isHover == true) {
+        .dark\:hover\:#{$bp}#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .dark\:active\:#{$bp}#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .dark\:focus\:#{$bp}#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// reusable @each mixin
+
+@mixin eachValues($bp: '', $loop, $hasWebkit: false) {
+  @each $property, $map in $loop {
+    $key: map-get($map, 'keys');
+    $values: map-get($map, 'values');
+
+    @each $k, $v in $values {
+      .dark\:#{$bp}#{$key}#{$k} {
+        #{$property}: $v;
+        @if ($hasWebkit == true) {
+          -webkit-#{$property}: $v;
+          -moz-#{$property}: $v;
+        }
+      }
+
+      .dark\:active\:#{$bp}#{$key}#{$k} {
+        &:active {
+          #{$property}: $v;
+          @if ($hasWebkit == true) {
+            -webkit-#{$property}: $v;
+            -moz-#{$property}: $v;
+          }
+        }
+      }
+      .dark\:hover\:#{$bp}#{$key}#{$k} {
+        &:hover {
+          #{$property}: $v;
+          @if ($hasWebkit == true) {
+            -webkit-#{$property}: $v;
+            -moz-#{$property}: $v;
+          }
+        }
+      }
+      .dark\:focus\:#{$bp}#{$key}#{$k} {
+        &:focus {
+          #{$property}: $v;
+          @if ($hasWebkit == true) {
+            -webkit-#{$property}: $v;
+            -moz-#{$property}: $v;
+          }
+        }
+      }
+    }
+  }
+}

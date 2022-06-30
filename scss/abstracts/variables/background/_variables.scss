@@ -1,0 +1,54 @@
+$background: (
+  'background-attachment': (
+    'values': (
+      bg-fixed: fixed,
+      bg-local: local,
+      bg-scroll: scroll
+    )
+  ),
+  'background-clip': (
+    'values': (
+      bg-clip-border: border-box,
+      bg-clip-padding: padding-box,
+      bg-clip-content: content-box,
+      bg-clip-text: text
+    )
+  ),
+  'background-origin': (
+    'values': (
+      bg-origin-border: border-box,
+      bg-origin-padding: padding-box,
+      bg-origin-content: content-box
+    )
+  ),
+  'background-position': (
+    'values': (
+      bg-center: center,
+      bg-top: top,
+      bg-top-right: top right,
+      bg-right: right,
+      bg-right-bottom: right bottom,
+      bg-bottom: bottom,
+      bg-left-bottom: left bottom,
+      bg-left: left,
+      bg-left-top: left top
+    )
+  ),
+  'background-repeat': (
+    'values': (
+      bg-repeat: repeat,
+      bg-no-repeat: no-repeat,
+      bg-repeat-x: repeat-x,
+      bg-repeat-y: repeat-y,
+      bg-repeat-round: round,
+      bg-repeat-space: space
+    )
+  ),
+  'background-size': (
+    'values': (
+      bg-auto: auto,
+      bg-cover: cover,
+      bg-contain: contain
+    )
+  )
+);

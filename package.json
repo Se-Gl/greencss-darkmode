@@ -1,0 +1,42 @@
+{
+  "name": "@greencss/dark-mode",
+  "version": "1.0.0",
+  "description": "Dark mode for greenCSS. The classy way to write sustainable CSS.",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "sass --watch --no-source-map scss:css",
+    "prepare": "husky install",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "css": "sass --no-source-map scss:css",
+    "compressed-css": "sass --no-source-map scss:css/minified --style=compressed"
+  },
+  "keywords": [
+    "animation",
+    "css",
+    "design",
+    "library",
+    "greencss",
+    "darkmode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Se-Gl/greencss-darkmode.git"
+  },
+  "homepage": "https://www.greencss.dev",
+  "author": "Severin Glaser",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "git-branch-is": "^4.0.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "semantic-release": "^19.0.3"
+  }
+}

@@ -1,0 +1,52 @@
+@use '../../variables/borders/variables' as *;
+
+@mixin borderMixin(
+  $bp: '',
+  $postfix: px,
+  $classname: border-radius,
+  $firstnumber: 1,
+  $secondnumber: 50,
+  $calculate: 1,
+  $multiply: 1px,
+  $hasMultiple: false,
+  $secondclassname: ''
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $value: $i * $calculate;
+
+    @if $hasMultiple == true {
+      .dark\:#{$bp}#{$value}#{$postfix} {
+        #{$classname}: $value * $multiply;
+        #{$secondclassname}: $value * $multiply;
+      }
+      .dark\:hover\:#{$bp}#{$value}#{$postfix} {
+        &:hover {
+          #{$classname}: $value * $multiply;
+          #{$secondclassname}: $value * $multiply;
+        }
+      }
+    } @else {
+      .dark\:#{$bp}#{$value}#{$postfix} {
+        #{$classname}: $value * $multiply;
+      }
+      .dark\:hover\:#{$bp}#{$value}#{$postfix} {
+        &:hover {
+          #{$classname}: $value * $multiply;
+        }
+      }
+    }
+  }
+}
+
+@mixin borderColorMixin($bp, $loop, $classname, $selector: hover) {
+  @each $key, $val in $loop {
+    .dark\:#{$bp}#{$key} {
+      #{$classname}: $val;
+    }
+    .dark\:#{$selector}\:#{$bp}#{$key} {
+      &:#{$selector} {
+        #{$classname}: $val;
+      }
+    }
+  }
+}

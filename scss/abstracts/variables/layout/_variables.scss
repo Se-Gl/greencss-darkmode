@@ -1,0 +1,194 @@
+@use 'sass:math';
+
+$layoutVariables: (
+  'aspect-ratio': (
+    'values': (
+      aspect-auto: auto,
+      aspect-square: math.div(1, 1),
+      aspect-video: math.div(16, 9)
+    )
+  ),
+  'columns': (
+    'values': (
+      col-auto: auto
+    )
+  ),
+  'break-after': (
+    'values': (
+      break-after-auto: auto,
+      break-after-avoid: avoid,
+      break-after-all: all,
+      break-after-always: always,
+      break-after-avoid-page: avoid-page,
+      break-after-page: page,
+      break-after-left: left,
+      break-after-right: right,
+      break-after-column: column
+    )
+  ),
+  'break-before': (
+    'values': (
+      break-before-auto: auto,
+      break-before-avoid: avoid,
+      break-before-all: all,
+      break-before-always: always,
+      break-before-avoid-page: avoid-page,
+      break-before-page: page,
+      break-before-left: left,
+      break-before-right: right,
+      break-before-column: column
+    )
+  ),
+  'break-inside': (
+    'values': (
+      break-inside-auto: auto,
+      break-inside-avoid: avoid,
+      break-inside-avoid-page: avoid-page,
+      break-inside-avoid-column: avoid-column
+    )
+  ),
+  'box-decoration-break': (
+    'values': (
+      box-decoration-clone: clone,
+      box-decoration-slice: slice
+    )
+  ),
+  'box-sizing': (
+    'values': (
+      box-sizing-border: border-box,
+      box-sizing-content: content-box
+    )
+  ),
+  'float': (
+    'values': (
+      float-right: right,
+      float-left: left,
+      float-none: none
+    )
+  ),
+  'clear': (
+    'values': (
+      clear-left: left,
+      clear-right: right,
+      clear-both: both,
+      clear-none: none
+    )
+  ),
+  'isolation': (
+    'values': (
+      isolation: isolate,
+      isolation-auto: auto
+    )
+  ),
+  'object-fit': (
+    'values': (
+      object-contain: contain,
+      object-cover: cover,
+      object-fill: fill,
+      object-none: none,
+      object-scale-down: scale-down
+    )
+  ),
+  'object-position': (
+    'values': (
+      object-position-top: top,
+      object-position-right-top: right top,
+      object-position-right: right,
+      object-position-right-bottom: right bottom,
+      object-position-bottom: bottom,
+      object-position-center: center,
+      object-position-left-bottom: left bottom,
+      object-position-left: left,
+      object-position-left-top: left top
+    )
+  ),
+  'overflow': (
+    'values': (
+      overflow-auto: auto,
+      overflow-hidden: hidden,
+      overflow-clip: clip,
+      overflow-visible: visible,
+      overflow-scroll: scroll
+    )
+  ),
+  'overflow-x': (
+    'values': (
+      overflow-x-auto: auto,
+      overflow-x-hidden: hidden,
+      overflow-x-clip: clip,
+      overflow-x-visible: visible,
+      overflow-x-scroll: scroll
+    )
+  ),
+  'overflow-y': (
+    'values': (
+      overflow-y-auto: auto,
+      overflow-y-hidden: hidden,
+      overflow-y-clip: clip,
+      overflow-y-visible: visible,
+      overflow-y-scroll: scroll
+    )
+  ),
+  'overscroll-behavior': (
+    'values': (
+      overscroll-auto: auto,
+      overscroll-contain: contain,
+      overscroll-none: none
+    )
+  ),
+  'overscroll-behavior-y': (
+    'values': (
+      overscroll-y-auto: auto,
+      overscroll-y-contain: contain,
+      overscroll-y-none: none
+    )
+  ),
+  'overscroll-behavior-x': (
+    'values': (
+      overscroll-x-auto: auto,
+      overscroll-x-contain: contain,
+      overscroll-x-none: none
+    )
+  ),
+  'position': (
+    'values': (
+      absolute: absolute,
+      fixed: fixed,
+      relative: relative,
+      static: static,
+      sticky: sticky
+    )
+  ),
+  'top': (
+    'values': (
+      top-auto: auto
+    )
+  ),
+  'right': (
+    'values': (
+      right-auto: auto
+    )
+  ),
+  'bottom': (
+    'values': (
+      bottom-auto: auto
+    )
+  ),
+  'left': (
+    'values': (
+      left-auto: auto
+    )
+  ),
+  'visibility': (
+    'values': (
+      visible: visible,
+      hidden: hidden,
+      collapse: collapse
+    )
+  ),
+  'z-index': (
+    'values': (
+      z-auto: auto
+    )
+  )
+);

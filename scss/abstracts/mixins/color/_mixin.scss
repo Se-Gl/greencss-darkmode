@@ -1,0 +1,85 @@
+@use '../../variables/color/variables' as *;
+
+// .text-red with hover (.hov:text-red) and active (.act:text-red) classes
+@mixin initialColor($bp, $classname, $selector: hover) {
+  @each $key, $val in $colors {
+    .dark\:#{$bp}#{$key} {
+      #{$classname}: $val;
+    }
+    .dark\:#{$selector}\:#{$bp}#{$key} {
+      &:#{$selector} {
+        #{$classname}: $val;
+      }
+    }
+  }
+}
+
+@mixin lightColor($bp: '', $firstnumber, $secondnumber, $classname, $loop, $selector: hover) {
+  @each $key, $val in $loop {
+    @if ($firstnumber == 0) {
+      @for $i from $firstnumber through $secondnumber {
+        .dark\:#{$bp}#{$key} {
+          #{$classname}: $val;
+        }
+        .dark\:#{$selector}\:#{$bp}#{$key} {
+          &:#{$selector} {
+            #{$classname}: $val;
+          }
+        }
+      }
+    } @else {
+      // // light variations (7%)
+      @for $i from $firstnumber through $secondnumber {
+        $lighten: $i * 4.75%;
+
+        .dark\:#{$bp}#{$key}-#{$i} {
+          #{$classname}: lighten($val, $lighten);
+        }
+        .dark\:#{$selector}\:#{$bp}#{$key}-#{$i} {
+          &:#{$selector} {
+            #{$classname}: lighten($val, $lighten);
+          }
+        }
+      }
+    }
+  }
+}
+
+// custom background gradient with initial colors props and hover state
+// gradient-to-right from-purple to-orange
+@mixin bggradient($bp: '', $loop: $fullcolors) {
+  @each $name, $char in $loop {
+    .dark\:#{$bp}from-#{$name} {
+      --gradient-from-color: #{$char};
+      --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);
+    }
+    .dark\:hover\:#{$bp}from-#{$name} {
+      &:hover {
+        --gradient-from-color: #{$char};
+        --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);
+      }
+    }
+    .dark\:#{$bp}to-#{$name} {
+      --gradient-to-color: #{$char};
+    }
+    .dark\:hover\:#{$bp}to-#{$name} {
+      &:hover {
+        --gradient-to-color: #{$char};
+      }
+    }
+  }
+}
+
+@mixin bgGradientToFrom($bp: '') {
+  @each $position, $value in $positions {
+    .dark\:#{$bp}gradient-to-#{$position} {
+      background-image: linear-gradient(to $value, var(--gradient-color-merge));
+    }
+
+    .dark\:hover\:#{$bp}gradient-to-#{$position} {
+      &:hover {
+        background-image: linear-gradient(to $value, var(--gradient-color-merge));
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+# folders
+/.husky
+/node_modules
+/css/minified/
+/.github
+/css
+/samples
+
+# random
+package-lock.json
+.prettierrc
+
+# all .json files
+*.json
+*.txt
+
+# js markdown
+/js/**/*md

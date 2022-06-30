@@ -1,0 +1,48 @@
+$blendModes: (
+  'mix-blend-mode': (
+    'values': (
+      mix-blend-normal: normal,
+      mix-blend-multiply: multiply,
+      mix-blend-screen: screen,
+      mix-blend-overlay: overlay,
+      mix-blend-darken: darken,
+      mix-blend-lighten: lighten,
+      mix-blend-color-dodge: color-dodge,
+      mix-blend-color-burn: color-burn,
+      mix-blend-hard-light: hard-light,
+      mix-blend-soft-light: soft-light,
+      mix-blend-difference: difference,
+      mix-blend-exclusion: exclusion,
+      mix-blend-hue: hue,
+      mix-blend-saturation: saturation,
+      mix-blend-color: color,
+      mix-blend-luminosity: luminosity
+    )
+  ),
+  'background-blend-mode': (
+    'values': (
+      bg-blend-normal: normal,
+      bg-blend-multiply: multiply,
+      bg-blend-screen: screen,
+      bg-blend-overlay: overlay,
+      bg-blend-darken: darken,
+      bg-blend-lighten: lighten,
+      bg-blend-color-dodge: color-dodge,
+      bg-blend-color-burn: color-burn,
+      bg-blend-hard-light: hard-light,
+      bg-blend-soft-light: soft-light,
+      bg-blend-difference: difference,
+      bg-blend-exclusion: exclusion,
+      bg-blend-hue: hue,
+      bg-blend-saturation: saturation,
+      bg-blend-color: color,
+      bg-blend-luminosity: luminosity
+    )
+  ),
+  'opacity': (
+    'values': (
+      opacity-hidden: 0,
+      opacity-visible: 1
+    )
+  )
+);
