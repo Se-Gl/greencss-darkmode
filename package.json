@@ -33,7 +33,6 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
-    "git-branch-is": "^4.0.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "sass": "^1.53.0",
