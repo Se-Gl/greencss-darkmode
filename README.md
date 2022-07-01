@@ -21,7 +21,7 @@ npm i @greencss/dark-mode
 
 ```
 import 'greencss/css/greencss.css'.
-import '@greencss/dark-mode/css/greencss.css'
+import '@greencss/dark-mode/css/greencss-dark.css'
 ```
 
 - If you only want to use the dark mode colors, for example, import only the category into your project that you need.
@@ -55,7 +55,7 @@ You will find more information about the [CSS categories](https://www.greencss.d
 Instead of the normal version, you can also import a lightweight minified version.
 
 ```
-import '@greencss/dark-mode/css/minified/greencss.css'
+import '@greencss/dark-mode/css/minified/greencss-dark.css'
 ```
 
 Compact imports also work with categories:
@@ -73,7 +73,7 @@ import '@greencss/dark-mode/css/minified/classes/color/color.css'
 
 ```
 import 'greencss/css/greencss.css'.
-import '@greencss/dark-mode/css/greencss.css'
+import '@greencss/dark-mode/css/greencss-dark.css'
 import 'path-to-your-reset.css-file'.
 ```
 
