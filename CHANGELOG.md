@@ -1,9 +1,8 @@
 # [1.1.0](https://github.com/Se-Gl/greencss-darkmode/compare/v1.0.3...v1.1.0) (2022-07-01)
 
-
 ### Features
 
-* **naming:** clear separation of file names ([ad36d64](https://github.com/Se-Gl/greencss-darkmode/commit/ad36d64e920c7fb99ad24e8abe9148b4af63a07f))
+- **naming:** clear separation of file names ([ad36d64](https://github.com/Se-Gl/greencss-darkmode/commit/ad36d64e920c7fb99ad24e8abe9148b4af63a07f))
 
 ## [1.0.3](https://github.com/Se-Gl/greencss-darkmode/compare/v1.0.2...v1.0.3) (2022-06-30)
 
