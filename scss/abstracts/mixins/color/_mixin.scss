@@ -83,3 +83,28 @@
     }
   }
 }
+
+// custom color
+@mixin customColor($bp: '', $type: 'text-', $classname: 'color', $loop: $customcolors) {
+  @each $name, $char in $loop {
+    // text
+    .dark\:#{$bp}custom-#{$type}#{$name} {
+      #{$classname}: var(--custom-dark-color-#{$name});
+    }
+    .dark\:active\:#{$bp}custom-#{$type}#{$name} {
+      &:active {
+        #{$classname}: var(--custom-dark-color-#{$name});
+      }
+    }
+    .dark\:focus\:#{$bp}custom-#{$type}#{$name} {
+      &:focus {
+        #{$classname}: var(--custom-dark-color-#{$name});
+      }
+    }
+    .dark\:hover\:#{$bp}custom-#{$type}#{$name} {
+      &:hover {
+        #{$classname}: var(--custom-dark-color-#{$name});
+      }
+    }
+  }
+}

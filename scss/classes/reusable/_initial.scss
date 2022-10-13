@@ -77,6 +77,13 @@
 @include lightColor(accent-, 0, 0, accent-color, $lightdark, focus);
 @include initialColor(accent-, accent-color, active);
 @include initialColor(accent-, accent-color, focus);
+// custom colors
+@include customColor('', text-, color);
+@include customColor('', bg-, background-color);
+@include customColor('', border-, border-color);
+@include customColor('', fill-, fill);
+@include customColor('', accent-, accent-color);
+@include customColor('', text-decoration-, text-decoration-color);
 // layout
 @include eachValues('', $layoutVariables);
 @include universalMixin(true, true, true, col-, columns, '', 1, 12, 1, 1);

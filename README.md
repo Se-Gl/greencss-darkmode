@@ -96,7 +96,7 @@ If the text colour for an element is to be changed on small screens only (0px - 
 In addition to the responsive classes, all dark mode classes also have active, focus and hover classes, which can be combined as desired. Just add the `dark:` prefix in front of every individual class.
 
 ```html
-<p class="text-blue hover:text-orange dark:text-blue-10 dark:hover:text-orange-10">
+<p class="text-blue hover:text-orange dark:text-blue-10 dark:hover:text-orange-10 dark:hover:sm:text-red">
   Different text colours and different states for all screens
 </p>
 ```

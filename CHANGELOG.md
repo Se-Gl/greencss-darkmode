@@ -1,9 +1,8 @@
 ## [1.1.1](https://github.com/Se-Gl/greencss-darkmode/compare/v1.1.0...v1.1.1) (2022-08-24)
 
-
 ### Performance Improvements
 
-* **reset:** deleted moz classes which may can cause errors p.e. with parcel ([ed8c520](https://github.com/Se-Gl/greencss-darkmode/commit/ed8c520577c4acf72c59127966231f4683d586b9))
+- **reset:** deleted moz classes which may can cause errors p.e. with parcel ([ed8c520](https://github.com/Se-Gl/greencss-darkmode/commit/ed8c520577c4acf72c59127966231f4683d586b9))
 
 # [1.1.0](https://github.com/Se-Gl/greencss-darkmode/compare/v1.0.3...v1.1.0) (2022-07-01)
 
