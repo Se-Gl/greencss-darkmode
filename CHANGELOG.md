@@ -1,9 +1,8 @@
 # [1.2.0](https://github.com/Se-Gl/greencss-darkmode/compare/v1.1.1...v1.2.0) (2022-10-14)
 
-
 ### Features
 
-* **custom-colors:** added custom dark color mixin ([cd182c9](https://github.com/Se-Gl/greencss-darkmode/commit/cd182c9497ebcc3a4654370b30130b2da90a0352))
+- **custom-colors:** added custom dark color mixin ([cd182c9](https://github.com/Se-Gl/greencss-darkmode/commit/cd182c9497ebcc3a4654370b30130b2da90a0352))
 
 ## [1.1.1](https://github.com/Se-Gl/greencss-darkmode/compare/v1.1.0...v1.1.1) (2022-08-24)
 
