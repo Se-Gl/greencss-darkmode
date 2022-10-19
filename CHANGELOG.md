@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Se-Gl/greencss-darkmode/compare/v1.2.0...v1.2.1) (2022-10-19)
+
+
+### Bug Fixes
+
+* **color:** added custom black and white classes ([e41b097](https://github.com/Se-Gl/greencss-darkmode/commit/e41b0976b3bcb7faf3cec823316491447829472f))
+
 # [1.2.0](https://github.com/Se-Gl/greencss-darkmode/compare/v1.1.1...v1.2.0) (2022-10-14)
 
 ### Features
