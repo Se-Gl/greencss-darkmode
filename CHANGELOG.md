@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Se-Gl/greencss-darkmode/compare/v1.2.1...v1.2.2) (2022-11-11)
+
+
+### Bug Fixes
+
+* **line-clamp:** added line clamp ([cce6fa4](https://github.com/Se-Gl/greencss-darkmode/commit/cce6fa41bf3b8f6a6b1c6e019063756155d99f2e))
+
 ## [1.2.1](https://github.com/Se-Gl/greencss-darkmode/compare/v1.2.0...v1.2.1) (2022-10-19)
 
 ### Bug Fixes
